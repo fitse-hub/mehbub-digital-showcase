@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Site copy and company details live in `src/content/*.ts`; pages and `src/components/site/*` read from there so text changes stay in one place.
+- Site photos are Lovable asset pointers (`src/assets/*.asset.json`), imported and used via `.url`, so binaries stay out of the repo.
+- The contact form opens the visitor's email app (mailto) with the enquiry prefilled; there is no backend, so no stored submissions.
