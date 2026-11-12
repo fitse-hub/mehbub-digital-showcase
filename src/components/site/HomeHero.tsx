@@ -21,6 +21,7 @@ export function HomeHero() {
   }, [i, paused]);
 
   const slide = heroSlides[i] ?? heroSlides[0]!;
+  const isFeatureSlide = i === heroSlides.length - 1;
 
   return (
     <section
