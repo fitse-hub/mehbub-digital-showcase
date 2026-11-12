@@ -138,6 +138,23 @@
 
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-100%); } }
 .animate-marquee { animation: marquee 70s linear infinite; }
+/* Partner logos: full colour; hovering a row pauses only that row and spotlights the hovered logo. */
+.partner-row:hover .animate-marquee { animation-play-state: paused; }
+.partner-tile {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: var(--radius-lg);
+  transition: opacity .35s ease, transform .35s cubic-bezier(.2,.8,.2,1), border-color .35s ease, box-shadow .35s ease, background-color .35s ease;
+}
+.partner-tile img { transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+.partner-row:hover .partner-tile:not(:hover) { opacity: .45; }
+.partner-tile:hover {
+  background-color: var(--background);
+  border-color: var(--border);
+  box-shadow: 0 10px 30px -12px color-mix(in oklab, var(--primary) 35%, transparent);
+  transform: translateY(-3px);
+}
+.partner-tile:hover img { transform: scale(1.06); }
 @utility marquee-mask {
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }

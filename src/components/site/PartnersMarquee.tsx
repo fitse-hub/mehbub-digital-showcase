@@ -12,16 +12,16 @@ export function PartnersMarquee() {
       </div>
       <div className="marquee-mask mt-10 space-y-2 md:mt-12">
         {rows.map((row, r) => (
-          <div key={r} className="group flex overflow-hidden">
+          <div key={r} className="partner-row flex overflow-hidden py-2">
             {[0, 1].map((copy) => (
               <ul
                 key={copy}
                 aria-hidden={copy === 1}
-                className={`flex shrink-0 items-center gap-4 pr-4 animate-marquee group-hover:[animation-play-state:paused] ${r === 1 ? "[animation-direction:reverse]" : ""}`}
+                className={`flex shrink-0 items-center gap-4 pr-4 animate-marquee ${r === 1 ? "[animation-direction:reverse]" : ""}`}
               >
                 {row.map((p) => (
-                  <li key={p.name} className="flex h-20 w-40 shrink-0 items-center justify-center md:h-24 md:w-48">
-                    <img src={p.logo} alt={copy === 0 ? p.name : ""} loading="lazy" width={225} height={128} className="h-full w-full object-contain mix-blend-multiply opacity-70 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0" />
+                  <li key={p.name} className="partner-tile flex h-20 w-40 shrink-0 items-center justify-center p-3 md:h-24 md:w-48">
+                    <img src={p.logo} alt={copy === 0 ? p.name : ""} loading="lazy" width={225} height={128} className="h-full w-full object-contain mix-blend-multiply" />
                   </li>
                 ))}
               </ul>
