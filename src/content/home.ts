@@ -1,5 +1,7 @@
 import { company } from "./company";
+import { edu } from "./solutions";
 import { wolloImages } from "./projects";
+import eduAppLanguages from "@/assets/edu-app-languages.webp.asset.json";
 import teamAsset from "@/assets/mehbub-team-hero.webp.asset.json";
 import datacenterAsset from "@/assets/datacenter.jpg.asset.json";
 import socAsset from "@/assets/soc-operations.jpg.asset.json";
@@ -29,6 +31,17 @@ export const heroSlides = [
   { image: cablingAsset.url, alt: "Structured network cabling", position: "center", kicker: "Networks", title: "Connected, everywhere." },
   { image: wolloCampusAsset.url, alt: "Wollo University campus", position: "center 60%", kicker: "Wollo University", title: "Three campuses. One network." },
 ];
+
+export const heroFeature = {
+  kicker: "Educational Super App",
+  title: "Learn in 7 languages",
+  text: "Ethiopia's first in-house educational super app — built for children, parents and educators.",
+  image: {
+    src: eduAppLanguages.url,
+    alt: "Educational Super App screen — learn in 7 languages including Amharic, Afaan Oromoo and Tigrigna",
+  },
+  playStore: edu.playStore,
+};
 
 export const featuredProject = {
   eyebrow: "Featured project",
