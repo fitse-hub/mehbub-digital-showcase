@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import type { CSSProperties } from "react";
 import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -26,6 +27,7 @@ export function HomeHero() {
   return (
     <section
       className="relative isolate flex h-[clamp(520px,72svh,760px)] items-center overflow-hidden bg-ink text-ink-foreground"
+      style={{ "--pos": slide.position, "--pos-sm": slide.positionSm ?? slide.position } as CSSProperties}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       aria-roledescription="carousel"
@@ -36,8 +38,7 @@ export function HomeHero() {
           src={slide.image}
           alt={slide.alt}
           fetchPriority={i === 0 ? "high" : "auto"}
-          className="absolute inset-0 -z-20 h-full w-full object-cover"
-          style={{ objectPosition: slide.position }}
+          className="hero-slide-img absolute inset-0 -z-20 h-full w-full object-cover"
           initial={{ opacity: 0, scale: reduce ? 1 : 1.08 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}

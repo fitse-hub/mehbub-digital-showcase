@@ -1,8 +1,8 @@
 import { company } from "./company";
 import { edu } from "./solutions";
 import { wolloImages } from "./projects";
-import eduAppLanguages from "@/assets/edu-app-languages.webp.asset.json";
-import familyLearningAsset from "@/assets/solution-family-learning.jpg.asset.json";
+import eduAppLearnPlay from "@/assets/edu-app-learn-play.webp.asset.json";
+import heroEducationalBanner from "@/assets/hero-educational-banner.webp.asset.json";
 import teamAsset from "@/assets/mehbub-team-hero.webp.asset.json";
 import datacenterAsset from "@/assets/datacenter.jpg.asset.json";
 import socAsset from "@/assets/soc-operations.jpg.asset.json";
@@ -25,13 +25,22 @@ export const hero = {
   highlight: { kicker: "Featured project", title: "Wollo University", text: "3 campuses modernized" },
 };
 
-export const heroSlides = [
+export type HeroSlide = {
+  image: string;
+  alt: string;
+  position: string;
+  positionSm?: string;
+  kicker: string;
+  title: string;
+};
+
+export const heroSlides: HeroSlide[] = [
   { image: teamAsset.url, alt: "The Mehbub Technologies team", position: "center 30%", kicker: "Since 2009", title: "Engineering the digital future." },
   { image: datacenterAsset.url, alt: "Enterprise data center with server racks", position: "center", kicker: "Infrastructure", title: "Data centers built to scale." },
   { image: socAsset.url, alt: "Security operations center", position: "center 40%", kicker: "Cybersecurity", title: "Protection that never sleeps." },
   { image: cablingAsset.url, alt: "Structured network cabling", position: "center", kicker: "Networks", title: "Connected, everywhere." },
   { image: wolloCampusAsset.url, alt: "Wollo University campus", position: "center 60%", kicker: "Wollo University", title: "Three campuses. One network." },
-  { image: familyLearningAsset.url, alt: "A mother and daughter learning together on a tablet", position: "center 45%", kicker: "Educational Super App", title: "Learning that speaks their language." },
+  { image: heroEducationalBanner.url, alt: "Educational Super App — learn in 7 languages including Amharic, Afaan Oromoo and Tigrigna", position: "center", positionSm: "right center", kicker: "Educational Super App", title: "Learning that speaks their language." },
 ];
 
 export const heroFeature = {
@@ -39,8 +48,8 @@ export const heroFeature = {
   title: "Learn in 7 languages",
   text: "Ethiopia's first in-house educational super app — built for children, parents and educators.",
   image: {
-    src: eduAppLanguages.url,
-    alt: "Educational Super App screen — learn in 7 languages including Amharic, Afaan Oromoo and Tigrigna",
+    src: eduAppLearnPlay.url,
+    alt: "Educational Super App screens — choose an account and start learning and playing",
   },
   playStore: edu.playStore,
 };
