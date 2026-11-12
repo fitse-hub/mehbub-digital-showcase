@@ -163,6 +163,12 @@
     linear-gradient(to top, color-mix(in oklab, var(--ink) 75%, transparent) 0%, color-mix(in oklab, var(--ink) 20%, transparent) 45%, transparent 70%),
     linear-gradient(90deg, color-mix(in oklab, var(--ink) 35%, transparent) 0%, transparent 50%);
 }
+/* Hero slide framing: keep the artwork's subject on screen on narrow viewports. */
+.hero-slide-img { object-position: var(--pos-sm, var(--pos, center)); }
+@media (min-width: 1024px) {
+  .hero-slide-img { object-position: var(--pos, center); }
+}
+
 /* Hero feature card: the Educational Super App photo beside the Play Store link. */
 .hero-feature {  box-shadow: 0 22px 50px -24px color-mix(in oklab, var(--ink) 85%, transparent);
 }
