@@ -31,6 +31,7 @@ export const heroSlides = [
   { image: socAsset.url, alt: "Security operations center", position: "center 40%", kicker: "Cybersecurity", title: "Protection that never sleeps." },
   { image: cablingAsset.url, alt: "Structured network cabling", position: "center", kicker: "Networks", title: "Connected, everywhere." },
   { image: wolloCampusAsset.url, alt: "Wollo University campus", position: "center 60%", kicker: "Wollo University", title: "Three campuses. One network." },
+  { image: familyLearningAsset.url, alt: "A mother and daughter learning together on a tablet", position: "center 45%", kicker: "Educational Super App", title: "Learning that speaks their language." },
 ];
 
 export const heroFeature = {
