@@ -1,0 +1,19 @@
+{
+  "source": "code-archive (project-migration-hub.zip)",
+  "capabilities": [
+    {"capability": "code", "source": "Lovable TanStack Start marketing site: 7 route files, src/components/site, src/content", "outcome": "migrate", "status": "pending", "next_action": "copy source"},
+    {"capability": "dependencies", "source": "framer-motion added on top of identical template deps; TanStack pins kept", "outcome": "migrate", "status": "pending", "next_action": "install framer-motion"},
+    {"capability": "assets", "source": "asset pointers owned by source project c2e476e8", "outcome": "migrate", "status": "pending", "next_action": "download bytes and re-upload to this project"},
+    {"capability": "schema", "source": "none: no database client, server functions or API calls", "outcome": "not_applicable", "status": "verified", "next_action": "none"},
+    {"capability": "records", "source": "none: content is static in src/content", "outcome": "not_applicable", "status": "verified", "next_action": "none"},
+    {"capability": "auth_identities", "source": "none: no sign-in", "outcome": "not_applicable", "status": "verified", "next_action": "none"},
+    {"capability": "authorization", "source": "none", "outcome": "not_applicable", "status": "verified", "next_action": "none"},
+    {"capability": "uploaded_file_bytes", "source": "none", "outcome": "not_applicable", "status": "verified", "next_action": "none"},
+    {"capability": "external_providers", "source": "Google Fonts link; contact form opens prefilled mailto", "outcome": "preserve", "status": "pending", "next_action": "verify"},
+    {"capability": "public_endpoints_callbacks_webhooks", "source": "none", "outcome": "not_applicable", "status": "verified", "next_action": "none"},
+    {"capability": "schedules", "source": "none", "outcome": "not_applicable", "status": "verified", "next_action": "none"},
+    {"capability": "secrets", "source": "none: no environment variables referenced", "outcome": "not_applicable", "status": "verified", "next_action": "none"},
+    {"capability": "cutover", "source": "images re-hosted in this project", "outcome": "accept", "status": "pending", "next_action": "after asset re-upload"},
+    {"capability": "verification", "source": "build, tests, page render", "outcome": "verify", "status": "pending", "next_action": "run checks"}
+  ]
+}
