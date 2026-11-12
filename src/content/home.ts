@@ -2,6 +2,7 @@ import { company } from "./company";
 import { edu } from "./solutions";
 import { wolloImages } from "./projects";
 import eduAppLanguages from "@/assets/edu-app-languages.webp.asset.json";
+import familyLearningAsset from "@/assets/solution-family-learning.jpg.asset.json";
 import teamAsset from "@/assets/mehbub-team-hero.webp.asset.json";
 import datacenterAsset from "@/assets/datacenter.jpg.asset.json";
 import socAsset from "@/assets/soc-operations.jpg.asset.json";
@@ -30,6 +31,7 @@ export const heroSlides = [
   { image: socAsset.url, alt: "Security operations center", position: "center 40%", kicker: "Cybersecurity", title: "Protection that never sleeps." },
   { image: cablingAsset.url, alt: "Structured network cabling", position: "center", kicker: "Networks", title: "Connected, everywhere." },
   { image: wolloCampusAsset.url, alt: "Wollo University campus", position: "center 60%", kicker: "Wollo University", title: "Three campuses. One network." },
+  { image: familyLearningAsset.url, alt: "A mother and daughter learning together on a tablet", position: "center 45%", kicker: "Educational Super App", title: "Learning that speaks their language." },
 ];
 
 export const heroFeature = {
