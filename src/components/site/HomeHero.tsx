@@ -36,8 +36,8 @@ export function HomeHero() {
           src={slide.image}
           alt={slide.alt}
           fetchPriority={i === 0 ? "high" : "auto"}
-          className="absolute inset-0 -z-20 h-full w-full object-cover"
-          style={{ objectPosition: slide.position }}
+          className="hero-slide-img absolute inset-0 -z-20 h-full w-full object-cover"
+          style={{ "--pos": slide.position, "--pos-sm": slide.positionSm ?? slide.position } as React.CSSProperties}
           initial={{ opacity: 0, scale: reduce ? 1 : 1.08 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
