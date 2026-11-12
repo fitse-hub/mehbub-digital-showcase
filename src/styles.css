@@ -142,16 +142,16 @@
 .partner-row:hover .animate-marquee { animation-play-state: paused; }
 .partner-tile {
   position: relative;
-  border: 1px solid transparent;
+  background-color: var(--card);
+  border: 1px solid color-mix(in oklab, var(--border) 60%, transparent);
   border-radius: var(--radius-lg);
-  transition: opacity .35s ease, transform .35s cubic-bezier(.2,.8,.2,1), border-color .35s ease, box-shadow .35s ease, background-color .35s ease;
+  transition: opacity .35s ease, transform .35s cubic-bezier(.2,.8,.2,1), border-color .35s ease, box-shadow .35s ease;
 }
 .partner-tile img { transition: transform .35s cubic-bezier(.2,.8,.2,1); }
-.partner-row:hover .partner-tile:not(:hover) { opacity: .45; }
+.partner-row:hover .partner-tile:not(:hover) { opacity: .5; }
 .partner-tile:hover {
-  background-color: var(--background);
-  border-color: var(--border);
-  box-shadow: 0 10px 30px -12px color-mix(in oklab, var(--primary) 35%, transparent);
+  border-color: color-mix(in oklab, var(--primary) 35%, var(--border));
+  box-shadow: 0 8px 20px -10px color-mix(in oklab, var(--primary) 40%, transparent);
   transform: translateY(-3px);
 }
 .partner-tile:hover img { transform: scale(1.06); }
