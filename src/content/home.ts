@@ -2,7 +2,6 @@ import { company } from "./company";
 import { edu } from "./solutions";
 import { wolloImages } from "./projects";
 import eduAppLanguages from "@/assets/edu-app-languages.webp.asset.json";
-import familyLearningAsset from "@/assets/solution-family-learning.jpg.asset.json";
 import teamAsset from "@/assets/mehbub-team-hero.webp.asset.json";
 import datacenterAsset from "@/assets/datacenter.jpg.asset.json";
 import socAsset from "@/assets/soc-operations.jpg.asset.json";
