@@ -19,6 +19,7 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -39,31 +40,34 @@
 }
 
 :root {
+  /* Official Mehbub palette (mehbubgtplc.com): brand green #198A44, hover green #0E7636,
+     navy #102136, slate text #4D5D6D, light greys #E4E9F0 / #F3F5F7 / #FBFBFC. */
   --radius: 0.375rem;
-  --background: oklch(0.995 0.002 250);
-  --foreground: oklch(0.19 0.04 262);
+  --background: oklch(0.988 0.001 286.4);
+  --foreground: oklch(0.245 0.046 254.6);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.19 0.04 262);
+  --card-foreground: oklch(0.245 0.046 254.6);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.19 0.04 262);
-  --primary: oklch(0.55 0.2 258);
-  --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.96 0.01 250);
-  --secondary-foreground: oklch(0.19 0.04 262);
-  --muted: oklch(0.965 0.008 250);
-  --muted-foreground: oklch(0.5 0.03 258);
-  --accent: oklch(0.95 0.025 250);
-  --accent-foreground: oklch(0.3 0.1 258);
+  --popover-foreground: oklch(0.245 0.046 254.6);
+  --primary: oklch(0.557 0.143 150.5);
+  --primary-hover: oklch(0.496 0.132 149.9);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.969 0.003 247.9);
+  --secondary-foreground: oklch(0.245 0.046 254.6);
+  --muted: oklch(0.969 0.003 247.9);
+  --muted-foreground: oklch(0.471 0.033 248.5);
+  --accent: oklch(0.96 0.025 150);
+  --accent-foreground: oklch(0.496 0.132 149.9);
   --destructive: oklch(0.577 0.22 27);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.91 0.012 252);
-  --input: oklch(0.88 0.015 252);
-  --ring: oklch(0.55 0.2 258);
-  --surface: oklch(0.975 0.008 250);
-  --signal: oklch(0.74 0.13 205);
-  --ink: oklch(0.17 0.04 263);
-  --ink-foreground: oklch(0.97 0.008 250);
-  --ink-muted: oklch(0.7 0.03 255);
+  --border: oklch(0.932 0.011 256.7);
+  --input: oklch(0.9 0.012 256.7);
+  --ring: oklch(0.557 0.143 150.5);
+  --surface: oklch(0.969 0.003 247.9);
+  --signal: oklch(0.74 0.15 150);
+  --ink: oklch(0.245 0.046 254.6);
+  --ink-foreground: oklch(0.985 0.003 264.5);
+  --ink-muted: oklch(0.74 0.025 250);
   --ink-line: oklch(1 0 0 / 0.1);
 }
 
