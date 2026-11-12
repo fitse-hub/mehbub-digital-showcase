@@ -21,7 +21,8 @@ export function HomeHero() {
     return () => clearTimeout(t);
   }, [i, paused]);
 
-  const slide = heroSlides[i] ?? heroSlides[0]!;
+  const slide = heroSlides[i] ?? heroSlides[0];
+  if (!slide) return null;
   const isFeatureSlide = i === heroSlides.length - 1;
 
   return (
@@ -48,7 +49,7 @@ export function HomeHero() {
       <div className="hero-scrim absolute inset-0 -z-10" aria-hidden />
 
       <div className="container-x relative flex h-full flex-col justify-end pb-20 pt-16">
-        <div className="flex w-full flex-col items-start justify-end gap-8 lg:flex-row lg:items-end lg:justify-between lg:gap-12">
+        <div className={`flex w-full flex-col items-start justify-end ${isFeatureSlide ? "gap-6 lg:gap-8" : "gap-8 lg:flex-row lg:items-end lg:justify-between lg:gap-12"}`}>
           <div className="max-w-lg">
             <AnimatePresence mode="wait">
               <motion.div
@@ -82,7 +83,7 @@ export function HomeHero() {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 10, scale: 0.98 }}
                 transition={{ duration: 0.6, ease }}
-                className="hero-feature w-full max-w-sm shrink-0 rounded-2xl border border-ink-line bg-ink/60 p-3 pr-4 backdrop-blur-xl transition-colors duration-500 hover:border-signal/45 sm:max-w-md lg:w-auto"
+                className="hero-feature w-full max-w-lg shrink-0 rounded-2xl border border-ink-line bg-ink/60 p-3 pr-4 backdrop-blur-xl transition-colors duration-500 hover:border-signal/45"
               >
                 <div className="flex items-center gap-4">
                   <img
