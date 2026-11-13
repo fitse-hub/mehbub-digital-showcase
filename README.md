@@ -1,18 +1,18 @@
 # Mehbub Digital Showcase
 
-/skill:migrate-external-project Source: code archive. Migrate the attached project into Lovable.
+/skill:migrate-external-project Source: code archive.
 
-This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://mehbub-digital-showcase.lovable.app
+**Live app**: https://mehbubgtplc.netlify.app/
 
-## Build with Lovable
+## Build 
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4c95e2e4-a6b1-4340-bddc-c4449116f5ab).
+Continue developing this project in the 
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
 - **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes , ready for your next project
+
 
 ## Development
 
